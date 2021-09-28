@@ -1,0 +1,61 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="WpfApplication1.MainWindow"
+        Title="GR" Height="417" Width="744">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <Menu VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="22">
+            <MenuItem Header="Меню" Width="48" Click="MenuItem_Click_1"/>
+            <MenuItem x:Name="MenuGL" Header="Главное меню" Click="MenuItem_Click_2">
+                <Button Content="Очистка"/>
+            </MenuItem>
+            <Button Content="Справка"/>
+        </Menu>
+        <Menu VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalAlignment="Top" Margin="0,18,0,0" Height="69" Grid.ColumnSpan="2">
+            <Grid x:Name="gridFun" Height="69" Width="109" RenderTransformOrigin="0.752,0.638">
+                <Button Margin="0,0,0,49" Click="Button_Click_3" Content="Очистка"/>
+                <TextBox x:Name="TX1" TextWrapping="Wrap" Margin="0,20,55,30" Text="1"/>
+                <TextBox x:Name="TX2" TextWrapping="Wrap" Text="1" Margin="54,20,0,30"/>
+                <Label Content="Ширина" Margin="-5,39,55,4"/>
+                <Label Content="Высота" Margin="54,39,1,4"/>
+            </Grid>
+            <GroupBox Header="Фигуры" Height="69" Width="93">
+                <Grid HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="92">
+                    <Button x:Name="KV" Content="Кв" HorizontalAlignment="Right" Width="20" RenderTransformOrigin="-1.25,0.35" Margin="0,0,52,27" Click="Button_Click_2"/>
+                    <Button Content="Кр" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Click="Button_Click_1"/>
+                    <Button Content="Пр" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>                    
+                </Grid>
+            </GroupBox>
+            <Grid x:Name="gridColor" Height="69" Width="200">
+                <Button x:Name="Button4" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Click="Button_Click_4" Background="#FF080707"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FF898989"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="40,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FF4720CD"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FF17F900"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="80,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="0,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FF026AE8"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FFF7EA65"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="40,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="#FFFBA000"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="60,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35" Background="Red"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="80,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="120,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="140,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="160,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="180,0,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="100,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="120,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="140,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="160,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <Button Content="" HorizontalAlignment="Left" Margin="180,20,0,0" VerticalAlignment="Top" Width="20" Height="20" RenderTransformOrigin="-1.25,0.35"/>
+                <TextBox x:Name="TX3" TextWrapping="Wrap" Text="цвет заливки" Margin="0,40,100,0"/>
+                <TextBox x:Name="TX4" TextWrapping="Wrap" Text="цвет контура" Margin="100,40,0,0"/>
+            </Grid>
+        </Menu>
+        <Canvas x:Name="canvasPlate" Margin="0,87,10,0" RenderTransformOrigin="0.54,0.502" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
